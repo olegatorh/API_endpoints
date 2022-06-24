@@ -2,8 +2,6 @@ from django.contrib import admin
 from .models import Doctor, Direction
 
 
-# Register your models here.
-
 
 class DoctorInline(admin.TabularInline):
     model = Doctor.direction.through
