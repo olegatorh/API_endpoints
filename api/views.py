@@ -1,4 +1,6 @@
 from rest_framework.filters import OrderingFilter
+from rest_framework.permissions import IsAuthenticated
+
 from .serializers import DoctorSerializer, DirectionSerializer
 from rest_framework import viewsets
 from .models import Doctor, Direction
@@ -21,7 +23,6 @@ class DoctorView(viewsets.ModelViewSet):
     filter_backends = [DjangoFilterBackend, OrderingFilter]
     filterset_fields = ['work_experience']
     filterset_class = DoctorFilter
-
 
 class DirectionView(viewsets.ModelViewSet):
     serializer_class = DirectionSerializer
