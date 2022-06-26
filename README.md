@@ -8,3 +8,6 @@ for run this project you need use following steps:
 4) then activate it, (linux): "source <name_of_virtualenv>/bin/activate", (windows): "<name_of_virtualenv>/Source/activate.bat";
 5) back to previos folder wich includes manage.py and run: "pip install --upgrade pip" and after "pip install -r requirements.txt";
 6) after all dependencies will install run: "python manage.py runserver";
+
+
+# DESCRIPTION
