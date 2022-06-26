@@ -8,8 +8,9 @@ for run this project you need use following steps:
 4) then activate it, (linux): "source <name_of_virtualenv>/bin/activate", (windows): "<name_of_virtualenv>/Source/activate.bat";
 5) back to previos folder wich includes manage.py and run: "pip install --upgrade pip" and after "pip install -r requirements.txt";
 6) now you need fill your settings for mysql server, in folder APIendpoints rename file .env.example to .env and fill all parameters, hint(secret key you take from here https://djecrety.ir/) all mysql database paramenters from mysqlserver;
-7) create superuser by python manage.py createsuperuser;
-8) after all dependencies will install and you filled .env run: "python manage.py runserver";
+7) run this command for adding tables in your database: "python manage.py makemigrations" and after "python manage.py migrate"
+8) create superuser by python manage.py createsuperuser;
+9) after all dependencies will install and you filled .env run: "python manage.py runserver";
 
 # DESCRIPTION
 to check all avilable api endpoint you need to go to http://localhost:8000/api/
