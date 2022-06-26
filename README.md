@@ -19,4 +19,9 @@ there you will see page with this urls
     "direction": "http://127.0.0.1:8000/api/direction/"
 }
 
-in doctor page you can 
+in doctor page you can add new doctors, and ordering, searching, filtering by filter button, and also you can do same thing by using url
+in direction page you can only create a direction
+
+Admin panel: http://127.0.0.1:8000/admin/
+use your credentials from step 7 lo login
+here you can add a doctors and directions, filter them, sort them, delete, edit, create new. 
