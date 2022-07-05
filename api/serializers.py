@@ -4,14 +4,14 @@ from rest_framework.relations import PrimaryKeyRelatedField
 from .models import *
 
 
-class DirectionSerializer(PrimaryKeyRelatedField, serializers.ModelSerializer):
+class DirectionSerializer(serializers.ModelSerializer):
     class Meta:
         model = Direction
         fields = "__all__"
 
 
 class DoctorSerializer(serializers.ModelSerializer):
-    direction = DirectionSerializer(many=True, queryset=Direction.objects.all())
+    direction = PrimaryKeyRelatedField(many=True, queryset=Direction.objects.all())
 
     class Meta:
         model = Doctor
